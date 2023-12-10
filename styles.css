@@ -50,6 +50,10 @@ p {
     background: #9904c9;
 }
 
+.light-purple {
+    color: #d774f8;
+}
+
 .dark-purple {
     background: #07000f;
     background-color: #07000f
@@ -155,4 +159,38 @@ p {
 .purple > svg {
     margin-left: -21%;
     margin-bottom: -2%;
+    margin-top: 5%;
+}
+
+.navbar {
+    background-color: #9904c9;
+    background: #9904c9;
+    color: #f7b32b;
+}
+
+.form-sect {
+ display: flex;
+ flex-direction: column;
+
+}
+
+.form-control {
+    width: 100%;
+}
+
+.form-head {
+    margin-top: -13%;
+}
+
+form {
+    margin-top: -13%;
+    border-left: solid 2px #9904c9;
+    border-right: solid 2px #9904c9; 
+    border-radius: 20px;
+    width: 70%;
+    padding: 1% 2%;
+}
+
+input {
+    width: 100%;
 }

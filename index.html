@@ -20,7 +20,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary nav-element"
+        data-bs-theme="dark"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Gif Pulse</a>
           <button
@@ -109,47 +112,48 @@
         alt="Gif Pulse Logo"
         class="logo"
       />
-      <h1 class="gold">(Powered by Giphy.com)</h1>
+      <h3 class="gold">(Powered by Giphy.com)</h3>
     </section>
     <div class="spacer layer1"></div>
 
-    <section class="blue dark-purple">
-      <h1>Nice Curves</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nisi
-        numquam, dolor soluta deleniti inventore harum laboriosam veritatis
-        obcaecati, quos eveniet, nihil consequuntur iure incidunt tempora
-        pariatur vitae! Aut, corporis!
-      </p>
-      <div class="curve"></div>
-    </section>
-    <section class="">
-      <h1>Nice Curves</h1>
-      <p>
-        Quaerat et necessitatibus explicabo possimus consequatur quidem
-        exercitationem pariatur alias, a officiis ab ratione. Atque impedit
-        quam, natus repellat quod ab nesciunt maxime asperiores dolorem hic,
-        architecto ipsam minus delectus.
+    <section class="form-head dark-purple">
+      <h1>Let your imagination run wild!</h1>
+      <p class="light-purple">
+        Fill out the form below and watch as the perfect visual representation
+        of your current thoughts appears before your eyes!
       </p>
     </section>
-    <section class="bubble">
-      <h1>Nice Curves</h1>
-      <p>
-        Aliquam consectetur reprehenderit dolorem minus quis error rem porro
-        accusamus natus atque optio quo voluptatibus sit, beatae aspernatur
-        neque iste ullam quisquam alias possimus eveniet magnam illum facere.
-        Necessitatibus, nesciunt!
-      </p>
+
+    <section class="form-sect">
+      <form>
+        <div class="mb-3">
+          <label for="gif-topic" class="form-label">Gif Topic</label>
+          <input
+            type="text"
+            class="form-control"
+            id="gif-topic"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+          <label for="number-of-results" class="form-label"
+            >Number of Results</label
+          >
+          <input type="number" class="form-control" id="number-of-results" />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </section>
-    <section class="dark">
-      <h1>Nice Curves</h1>
-      <p>
-        Non nulla officia blanditiis sint aliquam, nobis optio facere ad sunt
-        quibusdam recusandae ea reiciendis. Assumenda nemo minima impedit,
-        voluptatum obcaecati at. Dolor quisquam dolorum illo hic voluptatibus
-        atque illum!
-      </p>
-    </section>
+
+    <div class="spacer layer1 flip"></div>
+
     <section class="red">
       <h1>Nice Curves</h1>
       <p>
@@ -177,64 +181,8 @@
     <div class="spacer layer1"></div>
 
     <div class="spacer layer1 flip"></div>
-    <section class="pink">
-      <h1>Nice Curves</h1>
-      <p>
-        Quisquam magni ipsam nobis qui provident laboriosam suscipit repellendus
-        blanditiis quis commodi quidem eligendi, fugiat aspernatur quam velit
-        maxime quo ut reprehenderit. Expedita ullam autem nostrum qui ex cum
-        similique.
-      </p>
-
-      <svg
-        id="visual"
-        viewBox="0 0 960 300"
-        width="960"
-        height="300"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        version="1.1"
-      >
-        <g transform="translate(474.6826327492008 133.1556177661208)">
-          <path
-            id="blob1"
-            d="M60.4 -50.2C85.4 -35.4 117.7 -17.7 124 6.4C130.4 30.4 110.8 60.8 85.8 81.5C60.8 102.1 30.4 113.1 1.2 111.9C-28 110.7 -56.1 97.4 -78.6 76.8C-101.1 56.1 -118 28 -114 4C-110 -20 -85.1 -40.1 -62.6 -54.9C-40.1 -69.7 -20 -79.4 -1.2 -78.2C17.7 -77 35.4 -65 60.4 -50.2"
-            fill="#BB004B"
-          ></path>
-        </g>
-
-        <g
-          transform="translate(463.69291358069916 140.78659565685714)"
-          class="blob2"
-        >
-          <path
-            id="blob2"
-            d="M68.8 -56.3C93.8 -43.8 121.9 -21.9 128 6.1C134.2 34.2 118.4 68.4 93.4 87.2C68.4 106 34.2 109.5 3.8 105.7C-26.6 102 -53.3 90.9 -68.8 72.1C-84.3 53.3 -88.6 26.6 -92.9 -4.2C-97.1 -35.1 -101.2 -70.2 -85.7 -82.7C-70.2 -95.2 -35.1 -85.1 -6.6 -78.5C21.9 -71.9 43.8 -68.8 68.8 -56.3"
-            fill="#BB004B"
-          ></path>
-        </g>
-      </svg>
-    </section>
     <div class="spacer layer1"></div>
 
-    <section>
-      <h1>Nice Curves</h1>
-      <p>
-        Impedit magnam voluptatum, dolorum magni esse aspernatur vero, ipsum
-        aperiam commodi fuga quasi, eaque in. Corrupti assumenda, iusto aperiam
-        tempora quibusdam dolorem quis placeat! Velit tempore vel consequuntur
-        nisi dolorum.
-      </p>
-    </section>
-    <section>
-      <h1>Nice Curves</h1>
-      <p>
-        Aut ea laboriosam, expedita obcaecati voluptates dolores aliquid
-        exercitationem quos asperiores ab molestias, fuga quas dicta nobis
-        fugiat! Soluta atque molestiae error, consectetur sint at laudantium
-        laborum ratione maiores animi!
-      </p>
-    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
