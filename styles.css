@@ -191,6 +191,24 @@ form {
     padding: 1% 2%;
 }
 
+label {
+    color: #f7b32b;
+    font-size: 20px;
+}
+
 input {
     width: 100%;
+}
+
+footer {
+    margin-top: -13%;
+    text-align: center;
+}
+
+footer a {
+    color: #d774f8;
+}
+
+footer a:hover {
+    color: #f7b32b;
 }
