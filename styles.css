@@ -21,7 +21,7 @@ section {
 h1 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 p {
@@ -145,4 +145,14 @@ p {
 
 .blob2 {
     visibility: hidden;
+}
+
+.logo {
+    width: 50%; 
+    margin-top: -25%;
+}
+
+.purple > svg {
+    margin-left: -21%;
+    margin-bottom: -2%;
 }
