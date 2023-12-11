@@ -15,6 +15,8 @@ function fetchGiphyData() {
   const apiKey = "8Qux5k2hrVNKEy6YTRKvw1nXNfFIgRDl";
   const searchQuery = document.getElementById("gifTopic").value;
   const numberOfResults = document.getElementById("numOfResults").value;
+  // const gifWidth =
+  // const gifHeight =
 
   const apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchQuery}&limit=${numberOfResults}&offset=0&rating=r&lang=en&bundle=messaging_non_clips`;
 

@@ -192,7 +192,18 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: double 5px var(--purple);
+    justify-content: center;
+    width: 70%;
+    margin-top: 20px;
+    padding: 5%; 
+    /* border: double 5px var(--purple);  */
+    border-radius: 20px;
+    background: linear-gradient(#202731, #400453);
+}
+
+.resultContainer > img {
+    width: 100%;
+    object-fit: contain;
 }
 
 footer {
