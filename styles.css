@@ -156,6 +156,14 @@ p {
     color: #f7b32b;
 }
 
+.giphy-logo {
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding: 20px;
+    background: radial-gradient(black, var(--purple));
+    border-radius: 40px;
+}
+
 .form-sect {
  display: flex;
  flex-direction: column;
@@ -186,6 +194,10 @@ label {
 
 input {
     width: 100%;
+}
+
+button {
+    color: var(--light-purple);
 }
 
 .resultContainer {
