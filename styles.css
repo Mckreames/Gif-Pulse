@@ -19,7 +19,8 @@
 
 body {
     margin: 0;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Alegreya', serif;
+ font-family: 'Roboto', sans-serif;
     color: white;
     background: var(--dark-purple);
     /* background: #202731; */
@@ -185,6 +186,10 @@ label {
 
 input {
     width: 100%;
+}
+
+.resultContainer {
+
 }
 
 footer {
