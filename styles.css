@@ -207,8 +207,10 @@ footer {
 
 footer a {
     color: #d774f8;
+    text-decoration: none;
 }
 
 footer a:hover {
     color: #f7b32b;
 }
+
