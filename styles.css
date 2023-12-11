@@ -1,10 +1,28 @@
-* {}
+* {
+--gold: #f7b32b;
+--blue: #3c31dd;
+--red: #dd3f31;
+--pink: #ff0066;
+--purple: #9904c9;
+--light-purple: #d774f8;
+--dark-purple: #07000f;
+--dark: #0f0f10;
+}
+
+.dark-purple {
+    background: var(--dark-purple);
+}
+
+.light-purple {
+    color: var(--light-purple);
+}
 
 body {
     margin: 0;
-    font-family: 'Prompt', sans-serif;
+    font-family: 'Alegreya', serif;
+ font-family: 'Roboto', sans-serif;
     color: white;
-    background: #07000f;
+    background: var(--dark-purple);
     /* background: #202731; */
     overflow-x: hidden;
 }
@@ -28,40 +46,6 @@ p {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 20px;
-}
-
-.gold {
-    color: #f7b32b;
-}
-
-.blue {
-    background: #3c31dd;
-}
-
-.red {
-    background: #dd3f31;
-}
-
-.pink {
-    background: #ff0066;
-}
-
-.purple {
-    background: #9904c9;
-}
-
-.light-purple {
-    color: #d774f8;
-}
-
-.dark-purple {
-    background: #07000f;
-    background-color: #07000f
-
-}
-
-.dark {
-    background: #0f0f10;
 }
 
 .curve {
@@ -89,7 +73,7 @@ p {
     border-radius: 100% 50%;
     width: 55%;
     height: 100%;
-    background-color: #3c31dd;
+    background-color: var(--blue);
     transform: translate(-3.7%, 40%);
     z-index: -1;
 }
@@ -102,7 +86,7 @@ p {
     bottom: 0;
     height: 85%;
     width: 100%;
-    background-color: #0f0f10;
+    background-color: var(--dark);
     z-index: -1;
 }
 
@@ -156,6 +140,10 @@ p {
     margin-top: -25%;
 }
 
+.purple {
+    background-color: var(--purple);
+}
+
 .purple > svg {
     margin-left: -21%;
     margin-bottom: -2%;
@@ -163,8 +151,8 @@ p {
 }
 
 .navbar {
-    background-color: #9904c9;
-    background: #9904c9;
+    background-color: var(--purple);
+    background: var(--purple);
     color: #f7b32b;
 }
 
@@ -184,20 +172,24 @@ p {
 
 form {
     margin-top: -13%;
-    border-left: solid 2px #9904c9;
-    border-right: solid 2px #9904c9; 
+    border-left: solid 2px var(--purple);
+    border-right: solid 2px var(--purple); 
     border-radius: 20px;
     width: 70%;
     padding: 1% 2%;
 }
 
 label {
-    color: #f7b32b;
+    color: var(--gold);
     font-size: 20px;
 }
 
 input {
     width: 100%;
+}
+
+.resultContainer {
+
 }
 
 footer {
@@ -206,11 +198,12 @@ footer {
 }
 
 footer a {
+    color: var(--light-purple);
     color: #d774f8;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #f7b32b;
+    color: var(--gold);
 }
 

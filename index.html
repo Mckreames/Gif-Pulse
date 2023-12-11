@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -115,7 +115,7 @@
         alt="Gif Pulse Logo"
         class="logo"
       />
-      <h3 class="gold">(Powered by Giphy.com)</h3>
+      <h6 class="gold">(Powered by Giphy.com)</h6>
     </section>
     <div class="spacer layer1"></div>
 
@@ -128,26 +128,34 @@
     </section>
 
     <section class="form-sect">
-      <form>
+      <form action="#" method="GET">
         <div class="mb-3">
-          <label for="gif-topic" class="form-label">Gif Topic</label>
+          <label for="gifTopic" class="form-label"
+            >Search Your Favorite Gifs</label
+          >
           <input
             type="text"
             class="form-control"
-            id="gif-topic"
+            id="gifTopic"
             aria-describedby="emailHelp"
           />
           <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
-          <label for="number-of-results" class="form-label"
-            >Number of Results</label
-          >
-          <input type="number" class="form-control" id="number-of-results" />
+          <label for="numOfResults" class="form-label">Number of Results</label>
+          <input type="number" class="form-control" id="numOfResults" />
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          onclick="fetchGiphyData()"
+        >
+          PULSE
+        </button>
       </form>
     </section>
+
+    <section id="resultContainer"></section>
 
     <div class="spacer layer1 flip"></div>
     <div class="spacer layer1"></div>
