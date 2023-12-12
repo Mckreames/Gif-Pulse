@@ -151,9 +151,35 @@ p {
 }
 
 .navbar {
-    background-color: var(--purple);
-    background: var(--purple);
-    color: #f7b32b;
+    background-color: var(--dark-purple) !important;
+    z-index: 1000;
+    border-bottom: 2px solid var(--dark-purple) !important;
+    box-shadow: 2px 2px 8px var(--dark-purple);
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: var(--light-purple) !important;
+    padding: 0 10px;
+    border-radius: 50px;
+    border-left: 8px double var(--purple); 
+    border-right: 8px double var(--purple);
+}
+
+.navbar-brand:hover {
+    color: var(--purple);
+}
+
+.navbar-toggler {
+    color: var(--light-purple) !important;
+    font-weight: bolder;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: large;
+    font-weight: bold;
 }
 
 .giphy-logo {
@@ -162,12 +188,13 @@ p {
     padding: 20px;
     background: radial-gradient(black 40%, var(--purple));
     border-radius: 40px;
+    box-shadow: 2px 2px 8px var(--dark-purple);
 }
 
 .form-sect {
- display: flex;
- flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .form-control {
@@ -186,7 +213,8 @@ form {
     border-radius: 20px;
     width: 70%;
     padding: 1% 2%;
-}
+    box-shadow: 0 1px 20px -6px var(--light-purple), 0 -1px 20px -6px var(--light-purple);
+} 
 
 label {
     color: var(--light-purple);
@@ -230,12 +258,13 @@ input {
 }
 
 .results {
-    border-right: solid 1px var(--purple);
-    border-left: solid 1px var(--purple);
+    border-right: solid 3px var(--purple);
+    border-left: solid 3px var(--purple);
     padding-right: 8%;
     padding-left: 8%;
-    margin: 0 20%;
+    margin: -5% 20% -6%;
     border-radius: 30px;
+    z-index: 20;
 }
 
 .result-container {
@@ -244,11 +273,11 @@ input {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    margin: auto; 
     padding: 8%; 
     /* border: double 5px var(--purple);  */
     border-radius: 20px;
-    background: linear-gradient(#202731, #400453);
+    background: linear-gradient(#232e3b, #400453);
 }
 
 .resultContainer > img {
