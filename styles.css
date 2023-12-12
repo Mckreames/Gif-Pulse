@@ -188,7 +188,12 @@ p {
     padding: 20px;
     background: radial-gradient(black 40%, var(--purple));
     border-radius: 40px;
+    cursor: pointer;
+}
+
+.giphy-logo:hover {
     box-shadow: 2px 2px 8px var(--dark-purple);
+    
 }
 
 .form-sect {
@@ -303,10 +308,18 @@ footer {
     text-align: center;
 }
 
+.connect-header {
+    margin-bottom: 3%; 
+    text-align: center;
+    font-size: 40px;
+}
+
 footer a {
     color: var(--light-purple);
     color: #d774f8;
     text-decoration: none;
+    font-size: 40px; 
+    font-weight: bold;
     padding: 10px;
     border-radius: 5px;
     border-left: 2px solid var(--purple);
@@ -320,7 +333,8 @@ footer a:hover {
 .flex {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;;
+    align-items: center;
+    margin-bottom: -2%;
 }
 
 /* Element slide and hide */
