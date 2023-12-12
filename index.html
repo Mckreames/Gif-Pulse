@@ -115,7 +115,7 @@
         alt="Gif Pulse Logo"
         class="logo"
       />
-      <img class="giphy-logo" src="Icons/giphy-logo.gif" />
+      <img class="giphy-logo" src="Icons/giphy-logo.gif" alt="Giphy Logo" />
     </section>
     <div class="spacer layer1"></div>
 
@@ -138,6 +138,7 @@
             class="form-control"
             id="gifTopic"
             aria-describedby="emailHelp"
+            required
           />
           <div id="emailHelp" class="form-text"></div>
         </div>
@@ -148,19 +149,27 @@
         <button
           type="submit"
           class="btn btn-primary"
+          id="search-gif"
           onclick="fetchGiphyData()"
+          href="#result-sect"
         >
           PULSE
         </button>
         <!--Rand Gif Giphy/ Google Btn -->
-        <button type="submit" class="btn btn-primary" id="new-gif">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          id="new-gif"
+          onclick="formSubmitted()"
+          href="result-sect"
+        >
           Random Gif
         </button>
       </form>
     </section>
 
-    <section>
-      <div class="resultContainer" id="resultContainer">
+    <section class="results" id="result-sect">
+      <div class="result-container" id="resultContainer">
         <h2>
           Unleash the meme magic! Enter your creativity, and watch the GIF
           generator bring your ideas to life with a touch of humor and
@@ -169,8 +178,10 @@
         <!-- <img src="Images/Snapchat-797557305.jpg" alt="shirtless pic" />
         <img src="Images/Snapchat-1190800537.jpg" alt="two hat stuffed pic" />
         <img src="Images/Snapchat-1849187257.jpg" alt="wet shirt contest pic" /> -->
+        <div id="gif-wrap">
+          <div id="gif-logo"></div>
+        </div>
       </div>
-      <div id="gif-wrap"><div id="gif-logo"</div>
     </section>
 
     <div class="spacer layer1 flip"></div>

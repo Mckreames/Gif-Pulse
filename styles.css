@@ -160,7 +160,7 @@ p {
     margin-top: 20px;
     margin-bottom: -20px;
     padding: 20px;
-    background: radial-gradient(black, var(--purple));
+    background: radial-gradient(black 40%, var(--purple));
     border-radius: 40px;
 }
 
@@ -176,6 +176,7 @@ p {
 
 .form-head {
     margin-top: -13%;
+    text-align: center;
 }
 
 form {
@@ -188,7 +189,7 @@ form {
 }
 
 label {
-    color: var(--gold);
+    color: var(--light-purple);
     font-size: 20px;
 }
 
@@ -196,18 +197,55 @@ input {
     width: 100%;
 }
 
-button {
-    color: var(--light-purple);
+#search-gif {
+    padding: .75rem 2.5rem;
+	font-weight: 600;
+	/* background: #424242; */
+	background: var(--dark-purple);
+	color: #fff;
+    border-color: var(--light-purple);
+	border-radius: 30px;
+	font-size: 14px;
+	transition: background .55s ease;
+	cursor: pointer;
+	&:hover {
+		background: var(--purple);
+	}
 }
 
-.resultContainer {
+#new-gif {
+    padding: .75rem 2.5rem;
+	font-weight: 600;
+	/* background: #424242; */
+	background: var(--dark-purple);
+	color: #fff;
+    border-color: var(--light-purple);
+	border-radius: 30px;
+	font-size: 14px;
+	transition: background .55s ease;
+	cursor: pointer;
+	&:hover {
+		background: var(--purple);
+	}
+}
+
+.results {
+    border-right: solid 1px var(--purple);
+    border-left: solid 1px var(--purple);
+    padding-right: 8%;
+    padding-left: 8%;
+    margin: 0 20%;
+    border-radius: 30px;
+}
+
+.result-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 100%;
     margin-top: 20px;
-    padding: 5%; 
+    padding: 8%; 
     /* border: double 5px var(--purple);  */
     border-radius: 20px;
     background: linear-gradient(#202731, #400453);
@@ -216,6 +254,19 @@ button {
 .resultContainer > img {
     width: 100%;
     object-fit: contain;
+}
+
+#gif-wrap {
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: -1;
 }
 
 footer {

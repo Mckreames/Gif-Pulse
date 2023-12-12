@@ -10,11 +10,17 @@ const tween = KUTE.fromTo(
 
 tween.start();
 
+// End Blob Movement
+
 // API Fetch
-function fetchGiphyData() {
+function fetchGiphyData(event) {
+  event.preventDefault();
+
   const apiKey = "8Qux5k2hrVNKEy6YTRKvw1nXNfFIgRDl";
   const searchQuery = document.getElementById("gifTopic").value;
-  const numberOfResults = document.getElementById("numOfResults").value;
+  const numberOfResults = Number.parseInt(
+    document.getElementById("numOfResults").value
+  );
   // const gifWidth =
   // const gifHeight =
 
@@ -36,6 +42,11 @@ function fetchGiphyData() {
     });
 }
 
+// End API Fetch
+
+// Pulse Button
+document.getElementById("search-gif").addEventListener("click", fetchGiphyData);
+
 function displayImages(images) {
   const resultContainer = document.getElementById("resultContainer");
   resultContainer.innerHTML = "";
@@ -46,6 +57,70 @@ function displayImages(images) {
     resultContainer.appendChild(imgElement);
   });
 }
+
+// End Pulse Button
+
+// Random Gif Button
+function formSubmitted(event) {
+  event.preventDefault();
+  const searchQuery = document.getElementById("gifTopic").value;
+  const numberOfResults = Number.parseInt(
+    document.getElementById("numOfResults").value
+  );
+
+  getData(searchQuery, numberOfResults);
+
+  document.getElementById("gifTopic").value = "";
+}
+
+// Giphy API defaults
+const giphy = {
+  baseURL: "https://api.giphy.com/v1/gifs/",
+  apiKey: "8Qux5k2hrVNKEy6YTRKvw1nXNfFIgRDl",
+  tag: "fail",
+  type: "random",
+  rating: "r",
+};
+// Target gif-wrap container
+const gifWrap = document.getElementById("gif-wrap");
+// Giphy API URL
+let giphyURL = encodeURI(
+  giphy.baseURL +
+    giphy.type +
+    "?api_key=" +
+    giphy.apiKey +
+    "&tag=" +
+    giphy.tag +
+    "&rating=" +
+    giphy.rating
+);
+
+function getData(searchQuery, numberOfResults) {
+  fetch(giphyURL)
+    .then((response) => response.json())
+    .then(renderData)
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+
+function renderData(response) {
+  console.log(response);
+
+  let html = "";
+
+  if (response.data && typeof response.data === "object") {
+    const image = response.data;
+    html = `<img src="${image.images.original.url} alt="${image.title}" />`;
+  } else {
+    console.error("Invalid response format");
+  }
+  document.getElementById("resultContainer").innerHTML = html;
+}
+
+document.getElementById("new-gif").addEventListener("click", formSubmitted);
+
+// End Random Gif Button
 
 // API Retrieval
 // const apiKey = "8Qux5k2hrVNKEy6YTRKvw1nXNfFIgRDl";
