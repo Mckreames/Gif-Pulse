@@ -111,26 +111,28 @@
       <img
         src="Icons/gif-pulse-logo-transparent-with-color.png"
         alt="Gif Pulse Logo"
-        class="logo"
+        class="logo slow-hide"
       />
-      <img class="giphy-logo" src="./Icons/giphy-logo.gif" alt="Giphy Logo" />
+      <img
+        class="giphy-logo hide"
+        src="./Icons/giphy-logo.gif"
+        alt="Giphy Logo"
+      />
     </section>
     <div class="spacer layer1"></div>
 
     <section class="form-head dark-purple">
       <h1>Let your imagination run wild!</h1>
-      <p class="light-purple">
+      <p class="light-purple hide">
         Fill out the form below and hit "Pulse" to watch as the perfect visual
         representation of your current thoughts appears before your eyes!
       </p>
     </section>
 
     <section class="form-sect">
-      <form action="#" method="GET">
+      <form action="#" method="GET" class="hide">
         <div class="mb-3">
-          <label for="gifTopic" class="form-label"
-            >Search Your Favorite Gifs</label
-          >
+          <label for="gifTopic" class="form-label">Search A Keyword</label>
           <input
             type="text"
             class="form-control"
@@ -141,8 +143,15 @@
           <div id="emailHelp" class="form-text"></div>
         </div>
         <div class="mb-3">
-          <label for="numOfResults" class="form-label">Number of Results</label>
-          <input type="number" class="form-control" id="numOfResults" />
+          <label for="numOfResults" class="form-label"
+            >Number of Results (Max: 25)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="numOfResults"
+            max="25"
+          />
         </div>
         <button
           type="submit"
@@ -151,7 +160,7 @@
           onclick="fetchGiphyData()"
           href="#result-sect"
         >
-          PULSE
+          Pulse!
         </button>
         <!--Rand Gif Giphy/ Google Btn -->
         <button
@@ -188,21 +197,13 @@
     <footer>
       <div class="flex">
         <p>
-          Portfolio: <br /><a href="http://wbutler.me/" target="_blank"
-            >Portfolio</a
-          >
+          <a href="http://wbutler.me/" target="_blank">Portfolio</a>
         </p>
-
         <p>
-          Github: <br /><a href="https://github.com/Mckreames" target="_blank"
-            >Github</a
-          >
+          <a href="https://github.com/Mckreames" target="_blank">Github</a>
         </p>
-
         <p>
-          LinkedIn: <br /><a
-            href="https://www.linkedin.com/in/williampbutler/"
-            target="_blank"
+          <a href="https://www.linkedin.com/in/williampbutler/" target="_blank"
             >LinkedIn</a
           >
         </p>
@@ -227,6 +228,7 @@
     <script src="
     https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
     "></script>
-    <script src="./script.js"></script>
+    <script src="./script1.js"></script>
+    <script src="./slideIn.js"></script>
   </body>
 </html>

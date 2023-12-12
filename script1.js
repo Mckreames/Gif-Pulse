@@ -10,7 +10,14 @@ const tween = KUTE.fromTo(
 
 tween.start();
 
-// End Blob Movement
+// Caps input field to 25
+const inputField = document.getElementById("numOfResults");
+
+inputField.addEventListener("input", function () {
+  if (parseInt(inputField.value) > 25) {
+    inputField.value = "25"; // Set the value to 50 if it's greater
+  }
+});
 
 // API Fetch
 function fetchGiphyData(event) {
@@ -42,8 +49,6 @@ function fetchGiphyData(event) {
     });
 }
 
-// End API Fetch
-
 // Pulse Button
 document.getElementById("search-gif").addEventListener("click", fetchGiphyData);
 
@@ -57,8 +62,6 @@ function displayImages(images) {
     resultContainer.appendChild(imgElement);
   });
 }
-
-// End Pulse Button
 
 // Random Gif Button
 function formSubmitted(event) {
