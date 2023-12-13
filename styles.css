@@ -194,6 +194,10 @@ p {
     font-weight: bold;
 }
 
+.navbar-nav .nav-link:hover {
+    color: var(--purple) !important;
+}
+
 .giphy-logo {
     margin-top: 20px;
     margin-bottom: -20px;
