@@ -145,7 +145,8 @@ p {
     border-radius: 150px;
     border-left: 25px double var(--dark-purple);
     border-right: 25px double var(--dark-purple);
-    background-color: rgba(23, 6, 43, 0.493);
+    background: linear-gradient(black, rgba(27, 5, 53, 0.425), black);
+    /* background-color: rgba(27, 5, 53, 0.425); */
     /* border-bottom: 5px solid var(--dark-purple); 
     border-top: 5px solid var(--dark-purple); */
 }
