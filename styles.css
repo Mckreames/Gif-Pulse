@@ -131,13 +131,23 @@ p {
     transform: translateY(-40%);
 }
 
-.blob2 {
+#blob2 {
     visibility: hidden;
 }
 
 .logo {
-    width: 50%; 
-    margin-top: -25%;
+    width: 100%; 
+    margin-top: -45%;
+    margin-left: -15%;
+    margin-right: -15%;
+    padding-left: 15%;
+    padding-right: 0;
+    border-radius: 150px;
+    border-left: 25px double var(--dark-purple);
+    border-right: 25px double var(--dark-purple);
+    background-color: rgba(23, 6, 43, 0.493);
+    /* border-bottom: 5px solid var(--dark-purple); 
+    border-top: 5px solid var(--dark-purple); */
 }
 
 .purple {
@@ -145,9 +155,9 @@ p {
 }
 
 .purple > svg {
-    margin-left: -21%;
-    margin-bottom: -2%;
+    margin-left: -17%; 
     margin-top: 5%;
+    /* margin-bottom: -10%; */
 }
 
 .navbar {
@@ -189,6 +199,7 @@ p {
     background: radial-gradient(black 40%, var(--purple));
     border-radius: 40px;
     cursor: pointer;
+
 }
 
 .giphy-logo:hover {
