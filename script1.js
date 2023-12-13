@@ -10,12 +10,12 @@ const tween = KUTE.fromTo(
 
 tween.start();
 
-// Caps input field to 25
+// Caps input field to 50
 const inputField = document.getElementById("numOfResults");
 
 inputField.addEventListener("input", function () {
-  if (parseInt(inputField.value) > 25) {
-    inputField.value = "25"; // Set the value to 50 if it's greater
+  if (parseInt(inputField.value) > 50) {
+    inputField.value = "50"; // Set the value to 50 if it's greater
   }
 });
 
@@ -54,7 +54,23 @@ document.getElementById("search-gif").addEventListener("click", fetchGiphyData);
 
 function displayImages(images) {
   const resultContainer = document.getElementById("resultContainer");
-  resultContainer.innerHTML = "";
+  const numberOfResults = Number.parseInt(
+    document.getElementById("numOfResults").value
+  );
+  const searchQuery = document.getElementById("gifTopic").value;
+
+  if (!searchQuery) {
+    resultContainer.innerHTML = "Check Your Keyword And Try Again...";
+  } else {
+    resultContainer.innerHTML = "";
+
+    // if (numberOfResults && searchQuery) {
+    //   resultContainer.innerHTML = "";
+    // } else if (!searchQuery) {
+    //   resultContainer.innerHTML = "Check Your Keyword And Try Again...";
+    // } else if (!numberOfResults) {
+    //   resultContainer.innerHTML = "Check Your Number Of Results And Try Again...";
+  }
 
   images.forEach((image) => {
     const imgElement = document.createElement("img");

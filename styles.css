@@ -146,6 +146,7 @@ p {
     border-left: 25px double var(--dark-purple);
     border-right: 25px double var(--dark-purple);
     background: linear-gradient(black, rgba(27, 5, 53, 0.425), black);
+    box-shadow: 2px 2px 8px var(--dark-purple);
     /* background-color: rgba(27, 5, 53, 0.425); */
     /* border-bottom: 5px solid var(--dark-purple); 
     border-top: 5px solid var(--dark-purple); */

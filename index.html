@@ -44,32 +44,17 @@
                 <a class="nav-link" aria-current="page" href="#top">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="http://wbutler.me/" target="_blank"
                   >Portfolio Link</a
                 >
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  href="./Documents/William_Butler_Resume.pdf"
+                  download="William_Butler_Resume.pdf"
+                  class="nav-link"
+                  >Download Resume</a
                 >
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Don't Click Me</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Don't Click Me Either</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Click Me If You Dare!</a>
-                  </li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -82,6 +67,7 @@
     <!-- <div class="spacer layer1 flip"></div> -->
     <section class="purple">
       <svg
+        class="slow-hide"
         id="visual"
         viewBox="0 0 960 300"
         height="500"
@@ -114,20 +100,14 @@
         alt="Gif Pulse Logo"
         class="logo slow-hide"
       />
-      <a href="https://giphy.com/" target="_blank"
-        ><img
-          class="giphy-logo hide"
-          src="./Icons/giphy-logo.gif"
-          alt="Giphy Logo"
-      /></a>
     </section>
     <div class="spacer layer1"></div>
 
     <section class="form-head dark-purple">
       <h1>Let your imagination run wild!</h1>
       <p class="light-purple hide">
-        Fill out the form below and hit "Pulse" to watch as the perfect visual
-        representation of your keyword appears before your eyes!
+        Fill out the form below and hit "Pulse" for results or "Random Pulse"
+        for a random gif!
       </p>
     </section>
 
@@ -146,13 +126,13 @@
         </div>
         <div class="mb-3">
           <label for="numOfResults" class="form-label"
-            >Number of Results (Max: 25)</label
+            >Number of Results (Max & Default: 50)</label
           >
           <input
             type="number"
             class="form-control"
             id="numOfResults"
-            max="25"
+            max="50"
           />
         </div>
         <button
@@ -179,11 +159,7 @@
 
     <section class="results" id="result-sect">
       <div class="result-container" id="resultContainer">
-        <h2>
-          Unleash the meme magic! Enter your creativity, and watch the GIF
-          generator bring your ideas to life with a touch of humor and
-          randomness!
-        </h2>
+        <h2>Unleash the meme magic!</h2>
         <!-- <img src="Images/Snapchat-797557305.jpg" alt="shirtless pic" />
         <img src="Images/Snapchat-1190800537.jpg" alt="two hat stuffed pic" />
         <img src="Images/Snapchat-1849187257.jpg" alt="wet shirt contest pic" /> -->
