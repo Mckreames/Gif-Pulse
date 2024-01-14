@@ -199,8 +199,10 @@ p {
 }
 
 .giphy-logo {
-    margin-top: 20px;
-    margin-bottom: -20px;
+    /* margin-top: 20px;
+    margin-bottom: -20px; */
+    width: auto;
+    float: right;
     padding: 20px;
     background: radial-gradient(black 40%, var(--purple));
     border-radius: 40px;
