@@ -43,7 +43,7 @@
   }
 
 body {
-    min-width: 300px;
+    min-width: 280px;
     /* font-family: 'Alegreya', serif; */
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -332,12 +332,13 @@ input {
     width: 100%;
     margin: auto; 
     padding: 8%; 
+    object-fit: contain;
     /* border: double 5px var(--purple);  */
     border-radius: 20px;
     background: linear-gradient(#232e3b, #400453);
 }
 
-.resultContainer > img {
+.result-container > img {
     width: 100%;
     object-fit: contain;
 }
@@ -409,4 +410,18 @@ footer a:hover {
     filter: blur(0);
     transform: translateX(0);
 
+}
+
+@media (max-width: 576px) {
+    .form-head > h1 {
+        font-size: 24px;
+    }
+
+    .connect-header {
+        font-size: 20px;
+    }
+
+    .connect-p a {
+        font-size: 20px;
+    }
 }
