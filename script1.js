@@ -41,7 +41,6 @@ function fetchGiphyData(event) {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
       displayImages(data.data);
     })
     .catch((error) => {
@@ -124,8 +123,6 @@ function getData(searchQuery, numberOfResults) {
 }
 
 function renderData(response) {
-  console.log(response);
-
   let html = "";
 
   if (response.data && typeof response.data === "object") {
@@ -140,34 +137,3 @@ function renderData(response) {
 document.getElementById("new-gif").addEventListener("click", formSubmitted);
 
 // End Random Gif Button
-
-// API Retrieval
-// const apiKey = "8Qux5k2hrVNKEy6YTRKvw1nXNfFIgRDl";
-// const apiUrl =
-//   "'https://api.giphy.com/v1/gifs/search?api_key=8Qux5k2hrVNKEy6YTRKvw1nXNfFIgRDl&q=spiderman&limit=25&offset=0&rating=r&lang=en&bundle=messaging_non_clips";
-
-// Using Fetch API
-// fetch(`${apiUrl}?apiKey=${apiKey}`)
-//   .then((response) => response.json())
-//   .then((data) => console.log(data))
-//   .catch((error) => console.error("Error:", error));
-
-// Zsolt's API Retrieval
-// fetch(
-//   "https://api.giphy.com/v1/gifs/search?api_key=8Qux5k2hrVNKEy6YTRKvw1nXNfFIgRDl&q=boob&limit=25&offset=0&rating=r&lang=en&bundle=messaging_non_clips"
-// )
-//   .then(function (data) {
-//     return data.json();
-//   })
-//   .then(function (response) {
-//     console.log(response);
-//     let gifs = response.data;
-//     let listItems = [];
-//     for (let gif of gifs) {
-//       let title = gif.title;
-//       let source = gif.images.original.url;
-//       listItems.push(`<img src='${source}' alt='${title}' />`);
-//     }
-//     let html = "<div>" + listItems.join("") + "</div>";
-//     document.body.innerHTML += html;
-//   });
