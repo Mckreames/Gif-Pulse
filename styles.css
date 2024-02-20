@@ -44,11 +44,9 @@
 
 body {
     min-width: 280px;
-    /* font-family: 'Alegreya', serif; */
     font-family: 'Roboto', sans-serif;
     color: white;
     background: var(--dark-purple);
-    /* background: #202731; */
     overflow-x: hidden;
 }
 
@@ -156,19 +154,13 @@ p {
     transform: translateY(-40%);
 }
 
-#blob1 {
-
-}
 
 #blob2 {
     visibility: hidden;
 }
 
 .logo {
-    /* width: 100%;  */
-    /* margin-top: -2.5%; */
     padding-left: 8%;
-    /* padding-right: 0; */
     border-radius: 150px;
     border-left: 25px double var(--dark-purple);
     border-right: 25px double var(--dark-purple);
@@ -187,7 +179,6 @@ p {
     margin-left: -17%; 
     margin-top: 5%;
     height: 800%;
-    /* margin-bottom: -10%; */
 }
 
 .navbar {
@@ -209,7 +200,6 @@ p {
 
 .navbar-brand:hover {
     animation: colorCycle 4s infinite !important;
-    /* color: var(--purple) !important; */
 }
 
 .navbar-toggler {
@@ -228,8 +218,6 @@ p {
 }
 
 .giphy-logo {
-    /* margin-top: 20px;
-    margin-bottom: -20px; */
     width: auto;
     float: right;
     padding: 20px;
@@ -263,12 +251,9 @@ p {
 
 form {
     margin-top: -40%;
-    /* margin-left: auto !important;
-    margin-right: auto !important; */
     border-left: solid 2px var(--purple);
     border-right: solid 2px var(--purple); 
     border-radius: 20px;
-    /* width: 70%; */
     padding: 1% 2%;
     box-shadow: 0 1px 20px -6px var(--light-purple), 0 -1px 20px -6px var(--light-purple);
 } 
@@ -285,7 +270,6 @@ input {
 #search-gif {
     padding: .75rem 2.5rem;
 	font-weight: 600;
-	/* background: #424242; */
 	background: var(--dark-purple);
 	color: #fff;
     border-color: var(--light-purple);
@@ -301,7 +285,6 @@ input {
 #new-gif {
     padding: .75rem 2.5rem;
 	font-weight: 600;
-	/* background: #424242; */
 	background: var(--dark-purple);
 	color: #fff;
     border-color: var(--light-purple);
@@ -333,7 +316,6 @@ input {
     margin: auto; 
     padding: 8%; 
     object-fit: contain;
-    /* border: double 5px var(--purple);  */
     border-radius: 20px;
     background: linear-gradient(#232e3b, #400453);
 }
